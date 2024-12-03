@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús El Mesías Templo Cristiano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#inicio" class="logo-link">
+                <img src="https://i.ibb.co/0C51LY4/logo-2-removebg-preview.png" alt="Jesús El Mesías Templo Cristiano" class="logo">
+            </a>
+            <div id="mobile-menu" class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div id="nav-links" class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#oracion">Oración</a>
+                <form id="searchForm" class="search-group">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Buscar...">
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <div id="loginSystem" class="login-system">
+                    <button id="loginButton" class="btn">Iniciar Sesión</button>
+                    <div id="userInfo" class="user-info" style="display: none;">
+                        <span id="welcomeMessage"></span>
+                        <img id="userAvatar" class="avatar" src="" alt="User Avatar">
+                        <button id="logoutButton" class="btn">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-up">Jesús El Mesías Templo Cristiano</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Transformando vidas, construyendo comunidad en Cristo</p>
+                <a href="#servicios" class="btn" data-aos="fade-up" data-aos-delay="400">Descubre Más</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <h3 id="culto-dominical-title">Culto Dominical</h3>
+                        <p id="culto-dominical-content">Únete a nosotros cada domingo para adorar y recibir la Palabra de Dios.</p>
+                        <button class="edit-btn" data-target="culto-dominical-title" style="display: none;">Editar Título</button>
+                        <button class="edit-btn" data-target="culto-dominical-content" style="display: none;">Editar Contenido</button>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 id="estudio-biblico-title">Estudio Bíblico</h3>
+                        <p id="estudio-biblico-content">Profundiza en las Escrituras con nuestros estudios semanales.</p>
+                        <button class="edit-btn" data-target="estudio-biblico-title" style="display: none;">Editar Título</button>
+                        <button class="edit-btn" data-target="estudio-biblico-content" style="display: none;">Editar Contenido</button>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3 id="grupos-oracion-title">Grupos de Oración</h3>
+                        <p id="grupos-oracion-content">Participa en nuestros grupos de intercesión y crecimiento espiritual.</p>
+                        <button class="edit-btn" data-target="grupos-oracion-title" style="display: none;">Editar Título</button>
+                        <button class="edit-btn" data-target="grupos-oracion-content" style="display: none;">Editar Contenido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Próximos Eventos</h2>
+                <div class="events-grid">
+                    <div class="event-card" data-aos="fade-up">
+                        <h3 id="retiro-espiritual-title">Retiro Espiritual</h3>
+                        <p id="retiro-espiritual-content">Un fin de semana de renovación y encuentro con Dios.</p>
+                        <p id="retiro-espiritual-date"><strong>Fecha:</strong> 15-17 de Julio, 2024</p>
+                        <button class="edit-btn" data-target="retiro-espiritual-title" style="display: none;">Editar Título</button>
+                        <button class="edit-btn" data-target="retiro-espiritual-content" style="display: none;">Editar Contenido</button>
+                        <button class="edit-btn" data-target="retiro-espiritual-date" style="display: none;">Editar Fecha</button>
+                    </div>
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 id="conferencia-liderazgo-title">Conferencia de Liderazgo</h3>
+                        <p id="conferencia-liderazgo-content">Desarrolla tus dones y habilidades para servir en el Reino.</p>
+                        <p id="conferencia-liderazgo-date"><strong>Fecha:</strong> 5-6 de Agosto, 2024</p>
+                        <button class="edit-btn" data-target="conferencia-liderazgo-title" style="display: none;">Editar Título</button>
+                        <button class="edit-btn" data-target="conferencia-liderazgo-content" style="display: none;">Editar Contenido</button>
+                        <button class="edit-btn" data-target="conferencia-liderazgo-date" style="display: none;">Editar Fecha</button>
+                    </div>
+                    <div class="event-card" data-aos="fade-up">
+                        <h3 id="discipulado-varones-title">Discipulado Varones</h3>
+                        <p id="discipulado-varones-content">Un fin de semana de renovación y encuentro con Dios.</p>
+                        <p id="discipulado-varones-date"><strong>Fecha:</strong> 30 de Octubre, 2024</p>
+                        <button class="edit-btn" data-target="discipulado-varones-title" style="display: none;">Editar Título</button>
+                        <button class="edit-btn" data-target="discipulado-varones-content" style="display: none;">Editar Contenido</button>
+                        <button class="edit-btn" data-target="discipulado-varones-date" style="display: none;">Editar Fecha</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="horarios" class="schedule">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Horarios de Servicios</h2>
+                <div class="schedule-grid">
+                    <div class="schedule-item" data-aos="fade-up">
+                        <h3>Culto Dominical</h3>
+                        <p>Domingos 10:00 AM</p>
+                    </div>
+                    <div class="schedule-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Estudio Bíblico</h3>
+                        <p>Miércoles 7:00 PM</p>
+                    </div>
+                    <div class="schedule-item" data-aos="fade-up" data-aos-delay="400">
+                        <h3>Jóvenes</h3>
+                        <p>Viernes 7:00 PM</p>
+                    </div>
+                    <div class="schedule-item" data-aos="fade-up" data-aos-delay="600">
+                        <h3>Oración</h3>
+                        <p>Martes 6:00 AM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="announcements">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Anuncios</h2>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <p id="anuncio-1">Campaña de evangelismo este sábado en el parque central.</p>
+                            <button class="edit-btn" data-target="anuncio-1" style="display: none;">Editar</button>
+                        </div>
+                        <div class="carousel-item">
+                            <p id="anuncio-2">Reunión de líderes el próximo lunes a las 7:00 PM.</p>
+                            <button class="edit-btn" data-target="anuncio-2" style="display: none;">Editar</button>
+                        </div>
+                        <div class="carousel-item">
+                            <p id="anuncio-3">Bautismos programados para el último domingo del mes.</p>
+                            <button class="edit-btn" data-target="anuncio-3" style="display: none;">Editar</button>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev">&lt;</button>
+                    <button class="carousel-control next">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="pastores" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Nuestros Pastores</h2>
+                <div class="pastors-grid">
+                    <div class="pastor-card" data-aos="fade-up">
+                        <img src="https://i.ibb.co/tmtdj9C/Pmig.webp" alt="Pastor Miguel" class="pastor-image" id="pastor-miguel-image">
+                        <h3 id="pastor-miguel-name">Ap.Lic.Miguel Angel Linares</h3>
+                        <p id="pastor-miguel-description">Con más de 20 años de experiencia en el ministerio, el Pastor Miguel lidera nuestra congregación con sabiduría y compasión.</p>
+                        <button class="edit-btn" data-target="pastor-miguel-name" style="display: none;">Editar Nombre</button>
+                        <button class="edit-btn" data-target="pastor-miguel-description" style="display: none;">Editar Descripción</button>
+                        <button class="edit-btn" data-target="pastor-miguel-image" style="display: none;">Cambiar Foto</button>
+                    </div>
+                    <div class="pastor-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://i.ibb.co/pXFvNZ0/pastora.webp" alt="Pastora Jessica" class="pastor-image" id="pastor-jessica-image">
+                        <h3 id="pastor-jessica-name">Prof.Lic.Jessica Justiniano</h3>
+                        <p id="pastor-jessica-description">La Pastora Jessica dirige nuestro ministerio de mujeres y es una fuente de inspiración para toda la comunidad.</p>
+                        <button class="edit-btn" data-target="pastor-jessica-name" style="display: none;">Editar Nombre</button>
+                        <button class="edit-btn" data-target="pastor-jessica-description" style="display: none;">Editar Descripción</button>
+                        <button class="edit-btn" data-target="pastor-jessica-image" style="display: none;">Cambiar Foto</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ensenanza" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Enseñanza de la Semana</h2>
+            <div id="video-container" class="video-container">
+                <iframe id="video-iframe" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100092570610096%2Fvideos%2F1086622799477633%2F&show_text=false&width=560&t=0" frameborder="0" allowfullscreen="true"></iframe>
+            </div>
+            <button id="changeVideoBtn" class="edit-btn" style="display: none;">Cambiar Video</button>
+        </div>
+    </section>
+
+
+        <section id="oracion" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Pedido de Oración</h2>
+                <form id="prayerForm" class="prayer-form">
+                    <h3>Comparte tu petición de oración</h3>
+                    <input type="text" id="prayerName" placeholder="Tu nombre" required>
+                    <textarea id="prayerRequest" placeholder="Tu petición de oración" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jesús El Mesías Templo Cristiano</h3>
+                    <p>Transformando vidas, construyendo comunidad en Cristo.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Teléfono: (+591) 77610444</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100092570610096" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jesus_el_mesias/" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/59177610444" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@jesus_el_mesias_sc" class="social-icon" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <a href="https://wa.me/59177610444" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+
+    <div id="loginModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <form id="loginForm" class="modern-form">
+                <div class="form-title">Iniciar Sesión</div>
+                <div class="input-container">
+                    <input placeholder="Nombre de usuario" type="text" id="username" required>
+                </div>
+                <div class="input-container">
+                    <input placeholder="Contraseña" type="password" id="password" required>
+                </div>
+                <button type="submit" class="submit">Ingresar</button>
+            </form>
+            <p id="errorMessage" style="color: red; display: none;">Usuario o contraseña incorrecta</p>
+        </div>
+    </div>
+
+    <div id="editModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2 id="editModalTitle">Editar Contenido</h2>
+            <form id="editForm">
+                <input type="text" id="editTitle" placeholder="Título">
+                <textarea id="editContent" placeholder="Contenido"></textarea>
+                <input type="text" id="editDate" placeholder="Fecha (si aplica)">
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="changeVideoModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Cambiar Video</h2>
+            <form id="changeVideoForm">
+                <input type="text" id="newVideoUrl" placeholder="URL del video de YouTube" required>
+                <button type="submit">Cambiar Video</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
